@@ -14,11 +14,6 @@ public class SpringSchedulerApplication {
 		SpringApplication.run(SpringSchedulerApplication.class, args);
 	}
 
-	@Scheduled(fixedRate=1000L)
-	public void someJob() throws InterruptedException {
-		System.out.println("now is "+new Date());
-		Thread.sleep(1000L);
-	}
 	
 	
 }
